@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('system', function (Blueprint $table) {
             $table->id();
-            $table->text('key')->unique();
-            $table->text('value')->nullable();
+            $table->string('key')->unique();
+            $table->string('value')->nullable();
         });
     }
 

@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('corporation', function (Blueprint $table) {
             $table->id();
-            $table->text('_id')->unique();
-            $table->text('name');
-            $table->text('type')->index();
+            $table->string('_id')->unique();
+            $table->string('name');
+            $table->string('type')->index();
             $table->timestamps();
         });
     }
